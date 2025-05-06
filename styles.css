@@ -1,0 +1,11 @@
+:root {
+    --main-background-color: #FFEFED;
+    --plain-background-color: white;
+    --accent-background-color: #FFFAFA;
+    --text-color: #204B5A;
+    --accent-text-color: #A63531;
+    --contrast-color: #98A357;
+}
+body{
+    background-color:var(--main-background-color);
+}
