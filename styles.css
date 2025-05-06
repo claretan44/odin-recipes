@@ -6,6 +6,27 @@
     --accent-text-color: #A63531;
     --contrast-color: #98A357;
 }
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+}
+header {
+    background-color: var(--plain-background-color);
+    height: 8rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-bottom-color: var(--contrast-color);
+}
 body{
     background-color:var(--main-background-color);
+}
+
+.wrapper{
+    background-color: var(--plain-background-color);
+    width: 60%;
+    margin: auto;
 }
