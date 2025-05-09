@@ -15,6 +15,13 @@
     font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
+.svg-background {
+    background-image: url(images/wave-haikei.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*aspect-ratio: 3/2;*/
+}
 .home-body {
     display: flex;
     flex-direction: column;
@@ -31,7 +38,7 @@
 }
 
 .image-wrapper {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 header {
     background-color: var(--plain-background-color);
