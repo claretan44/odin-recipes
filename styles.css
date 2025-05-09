@@ -85,7 +85,7 @@ h2 {
     font-weight:400;
 }
 
-ol, ul {
+.body-text, ol, ul {
     color: var(--text-color);
     margin-top: 1.5rem;
 }
@@ -160,4 +160,16 @@ section {
     margin: 0.5rem 4rem;
     font-size: 14px;
     color: var(--text-color);
+}
+
+.body-text a {
+    text-decoration: none;
+}
+
+.body-text a:link, .body-text a:visited {
+    color: var(--accent-text-color);
+}
+
+.body-text a:hover {
+    color: var(--contrast-color);
 }
