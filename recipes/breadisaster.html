@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breadisaster</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,9 +15,13 @@
     </header>
     <main>
         <div class="wrapper">
-            <h1>Breadisaster</h1>
-            <img src="../images/bread.png" alt="bread with a sad face"> 
-            <p> If you have some bread and want to make it question your culinary choices, this is the recipe for you!</p>
+            <section class="accent-background recipe-desc">
+                <div>
+                    <h1>Breadisaster</h1>
+                    <p> If you have some bread and want to make it question your culinary choices, this is the recipe for you!</p>
+                </div>
+                <img class= "recipe-image" src="../images/bread.png" alt="bread with a sad face"> 
+            </section>
             <section>
                 <h2>Ingredients</h2>
                 <ul>
@@ -26,7 +33,7 @@
                     <li>a marshmallow</li>
                 </ul>
             </section>
-            <section>
+            <section class="accent-background">
                 <h2>Steps</h2>
                 <ol>
                     <li> Take the bread and compliment it. It's gonna need confidence to pull this recipe off. </li>
@@ -40,9 +47,11 @@
         </div>
     </main>
     <footer>
-        <p> Really (?) Recipes is a web development practice project inspired by the Odin Recipes assignment.
-            Images, design and content are original unless noted otherwise. </p>
-        <p> © 2025 Clare Feliz Tan</p>
+        <div class="footer-text">
+            <p> Really (?) Recipes is a web development practice project inspired by the Odin Recipes assignment.
+                Images, design and content are original unless noted otherwise. </p>
+            <p> © 2025 Clare Feliz Tan</p>
+        </div>
     </footer>
 </body>
 </html>

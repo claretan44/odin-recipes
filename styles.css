@@ -3,13 +3,16 @@
     --plain-background-color: white;
     --accent-background-color: #FFFAFA;
     --text-color: #204B5A;
-    --accent-text-color: #A63531;
+    --accent-text-color: #844E4D;
     --contrast-color: #98A357;
+    --shadow-color: #E6CAC7;
 }
 
 * {
     box-sizing:border-box;
     margin: 0;
+    padding: 0;
+    font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 header {
     background-color: var(--plain-background-color);
@@ -17,16 +20,119 @@ header {
     display:flex;
     justify-content: center;
     align-items: center;
+    
     border-bottom-style: dashed;
     border-bottom-width: 2px;
-    border-bottom-color: var(--contrast-color);
+    border-bottom-color: var(--shadow-color);
+    /*box-shadow: 0px 1px 4px var(--contrast-color); */
 }
 body{
     background-color:var(--main-background-color);
+}
+
+footer {
+    background-color: var(--plain-background-color);
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    border-top-style: dashed;
+    border-top-width: 2px;
+    border-top-color: var(--shadow-color);
 }
 
 .wrapper{
     background-color: var(--plain-background-color);
     width: 60%;
     margin: auto;
+    border-left: dashed 2px var(--shadow-color);
+    border-right: dashed 2px var(--shadow-color);
+}
+
+h1 {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: "DM Serif Display";
+    font-size: 24px;
+    color: var(--text-color);
+    font-weight:400;
+}
+
+ol, ul {
+    color: var(--text-color);
+    margin-top: 1.5rem;
+}
+
+
+ul {
+    list-style-position: inside;
+}
+
+ul ::marker {
+    color: var(--contrast-color);
+}
+
+ol {
+    list-style-position: inside;
+}
+
+li{
+    margin:0.5rem 0rem;
+}
+
+ol li::before{
+    content:"";
+    width: 0.125rem;
+    display: inline-block;
+}
+
+.recipe-image {
+    width: 25%;
+    margin: 0.5rem;
+    border-radius: 100%;
+    border: 2px dashed var(--contrast-color);
+}
+
+/* bn
+header img {
+    width:100%;
+}*/
+
+.accent-background {
+    background-color: var(--accent-background-color);
+}
+
+section {
+    padding: 2.5rem 5rem;
+}
+
+.recipe-desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap-reverse;
+}
+
+.recipe-desc div {
+    flex-basis: 66%
+}
+.recipe-desc p {
+    margin-top: 1rem;
+    color: var(--text-color);
+}
+
+.footer-text{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 0.5rem 4rem;
+    font-size: 14px;
+    color: var(--text-color);
 }
