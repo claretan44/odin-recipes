@@ -1,2 +1,2 @@
 # odin-recipes
-A simple website for practicing html and css based on the odin project's recipes project
+A simple first website for practicing html and css based on the odin project's recipes project.
